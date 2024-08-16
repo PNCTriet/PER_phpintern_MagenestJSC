@@ -6,7 +6,7 @@ Trang web có thể được truy cập tại [GitHub Pages](https://pnctriet.gi
 
 ## Nội Dung Trang Web
 
-Trang web này là một ứng dụng web để giải hệ phương trình bậc nhất với hai ẩn số bằng PHP. Người dùng có thể nhập các hệ số của hệ phương trình vào form, và ứng dụng sẽ tính toán và hiển thị nghiệm của hệ phương trình. Ứng dụng sử dụng PHP để xử lý các yêu cầu tính toán trên máy chủ và trả về kết quả cho người dùng.
+Trang web này là một ứng dụng web để giải hệ phương trình bậc nhất với hai ẩn số bằng HTML, CSS và JavaScript. Người dùng có thể nhập các hệ số của hệ phương trình vào form, và ứng dụng sẽ tính toán và hiển thị nghiệm của hệ phương trình ngay trên trình duyệt. Ứng dụng sử dụng JavaScript để xử lý các yêu cầu tính toán và trả về kết quả cho người dùng mà không cần sử dụng PHP hay máy chủ bên ngoài.
 
 ## Thông Tin Cá Nhân
 
