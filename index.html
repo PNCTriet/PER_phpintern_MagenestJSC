@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/math.css" rel="stylesheet" />
     <link href="./css/stye.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>Giải Phương Trình Bậc 2</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,103 +23,105 @@
       rel="stylesheet"
     />
     <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        rel="stylesheet"
-    >
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar with Logo -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://magenest.com/vi/">
-                <img src="./photo/logo1-200px.png" alt="Logo" />
-            </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/PNCTriet/PER_DVDSTOREWEB">
-                            <i class="fa-brands fa-github"></i> Source code
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://magenest.com/vi/">
+          <img src="./photo/logo1-200px.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/PNCTriet/PER_DVDSTOREWEB"
+              >
+                <i class="fa-brands fa-github"></i> Source code
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
     <!-- Main content -->
     <div class="content">
-        <div style="align-items: center; margin-bottom: 20px;">
-      <div class="container">
-        <h1 class="text-center mb-4">Giải Phương Trình Bậc 2</h1>
-        <form id="quadraticForm">
-          <div class="mb-3">
-            <label for="a" class="form-label">Nhập hệ số a:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="a"
-              name="a"
-              required
-            />
-            <div id="errorA" class="error"></div>
-          </div>
-          <div class="mb-3">
-            <label for="b" class="form-label">Nhập hệ số b:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="b"
-              name="b"
-              required
-            />
-            <div id="errorB" class="error"></div>
-          </div>
-          <div class="mb-3">
-            <label for="c" class="form-label">Nhập hệ số c:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="c"
-              name="c"
-              required
-            />
-            <div id="errorC" class="error"></div>
-          </div>
-          <div class="d-flex justify-content-center mt-3 px-3">
-            <button
-              type="button"
-              class="btn btn-success mx-1"
-              onclick="showSolution()"
-              id="solutionButton"
-              style="display: none"
-            >
-              Chi tiết cách giải
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary mx-1"
-              onclick="solveQuadratic()"
-            >
-              Giải Phương Trình
-            </button>
-          </div>
-        </form>
-        <div id="result" class="result text-center"></div>
-        
+      <div style="align-items: center; margin-bottom: 20px">
+        <div class="container">
+          <h1 class="text-center mb-4">Giải Phương Trình Bậc 2</h1>
+          <form id="quadraticForm">
+            <div class="mb-3">
+              <label for="a" class="form-label">Nhập hệ số a:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="a"
+                name="a"
+                required
+              />
+              <div id="errorA" class="error"></div>
+            </div>
+            <div class="mb-3">
+              <label for="b" class="form-label">Nhập hệ số b:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="b"
+                name="b"
+                required
+              />
+              <div id="errorB" class="error"></div>
+            </div>
+            <div class="mb-3">
+              <label for="c" class="form-label">Nhập hệ số c:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="c"
+                name="c"
+                required
+              />
+              <div id="errorC" class="error"></div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 px-3">
+              <button
+                type="button"
+                class="btn btn-success mx-1"
+                onclick="showSolution()"
+                id="solutionButton"
+                style="display: none"
+              >
+                Chi tiết cách giải
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary mx-1"
+                onclick="solveQuadratic()"
+              >
+                Giải Phương Trình
+              </button>
+            </div>
+          </form>
+          <div id="result" class="result text-center"></div>
+        </div>
+        <div id="solutionSteps" class="solution-steps"></div>
       </div>
-      <div id="solutionSteps" class="solution-steps"></div>
-    </div>
     </div>
 
     <!-- Footer -->
@@ -145,9 +153,7 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
       integrity="sha384-d6iTn5Z2eoiNMGfgycY8k+sHZtNKlGRktAiyk0spOR+Z4znbNz1sX8fOaiGZ1djc"
