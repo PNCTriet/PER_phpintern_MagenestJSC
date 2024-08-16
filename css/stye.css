@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 500px;
+  padding: 20px;
+  align-items: center;
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+.footer-links a:hover {
+  color: #007bff;
+}
+.solution-steps {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #555;
+}
+#solutionSteps {
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #333;
+  display: inline-block;
+  padding: 10px;
+  max-width: 650px;
+  box-sizing: border-box;
+}
+.border-visible {
+  border: 1px solid #ddd;
+}
+#solutionSteps p {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-left: 4px solid #007bff;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+#solutionSteps p:first-child {
+  font-weight: bold;
+  border: none;
+  background: none;
+}
